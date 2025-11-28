@@ -10,9 +10,11 @@
   --outline-gray: #2F4F4F;
   --background: #ffffff;
   --foreground: #171717;
-  --font-heading: 'Modern Love Caps', 'Impact', 'Arial Black', sans-serif;
-  --font-logo: 'Abadi', 'Arial', 'Helvetica', sans-serif;
-  --font-quote: 'Dreaming Outloud Pro', 'Georgia', 'Times New Roman', serif;
+  /* Font Variables - Organized by Usage */
+  --font-main-heading: var(--font-modern-love-caps), 'Impact', 'Arial Black', sans-serif;
+  --font-section-heading: var(--font-modern-love-caps), 'Impact', 'Arial Black', sans-serif;
+  --font-quotation: var(--font-dreaming-outloud), 'Georgia', 'Times New Roman', serif;
+  --font-formal: var(--font-abadi, 'Arial'), 'Arial', 'Helvetica', sans-serif;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -29,33 +31,69 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-dreaming-outloud), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   overflow-x: hidden;
 }
 
+/* ============================================
+   FONT CLASSES - ORGANIZED BY USAGE
+   ============================================ */
 
+/* Main Headings - Modern Love Caps */
+.font-main-heading {
+  font-family: var(--font-main-heading);
+}
+
+/* Section Headings - Modern Love Caps */
+.font-section-heading {
+  font-family: var(--font-section-heading);
+}
+
+/* Quotations / Speech - Dreaming Outloud Pro */
+.font-quotation {
+  font-family: var(--font-quotation);
+}
+
+/* Formal/Legal - Abadi */
+.font-formal {
+  font-family: var(--font-formal);
+}
+
+/* ============================================
+   ADDITIONAL FONT VARIANTS (Optional)
+   ============================================ */
+
+/* Modern Love Caps - Direct access */
+.font-modern-love-caps {
+  font-family: var(--font-modern-love-caps), 'Impact', 'Arial Black', sans-serif;
+}
+
+/* Modern Love Grunge - Textured/grungy style */
+.font-modern-love-grunge {
+  font-family: var(--font-modern-love-grunge), 'Impact', 'Arial Black', sans-serif;
+}
+
+/* Modern Love Rough - Rough textured style */
+.font-modern-love-rough {
+  font-family: var(--font-modern-love-rough), 'Impact', 'Arial Black', sans-serif;
+}
+
+/* Dreaming Outloud Pro - Direct access */
+.font-dreaming-outloud {
+  font-family: var(--font-dreaming-outloud), 'Georgia', 'Times New Roman', serif;
+}
+
+/* Legacy class names for backward compatibility */
 .font-heading {
-  font-family: var(--font-heading);
+  font-family: var(--font-main-heading);
 }
 
 .font-logo {
-  font-family: var(--font-logo);
+  font-family: var(--font-main-heading);
 }
 
 .font-quote {
-  font-family: var(--font-quote);
-}
-
-.pacifico-regular {
-  font-family: var(--font-pacifico), "Pacifico", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.lobster-regular {
-  font-family: var(--font-lobster), "Lobster", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+  font-family: var(--font-quotation);
 }
 
 .text-primary-pink {
