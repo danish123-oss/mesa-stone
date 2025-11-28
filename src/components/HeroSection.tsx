@@ -23,18 +23,26 @@ export default function HeroSection() {
             const imageWidth = isMobile ? '80%' : '50%';
             const imageLeft = isMobile ? '10%' : '25%';
 
+            const scrollDistance = window.innerHeight * 0.6;
+            
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: heroRef.current,
                     start: 'top top',
-                    end: '+=130%',
+                    end: `+=${scrollDistance}px`,
                     scrub: 1,
                     markers: false,
                     anticipatePin: 1,
+                    pin: true,
+                    pinSpacing: true,
                 }
             });
 
-            gsap.set(backgroundTextRef.current, { autoAlpha: 0 });
+            gsap.set(backgroundTextRef.current, { autoAlpha: 1 });
+            
+            gsap.set(imageWrapperRef.current, {
+                transformOrigin: 'center center',
+            });
 
             tl.to(overlayTextRef.current, {
                 y: -window.innerHeight * 2,
@@ -55,25 +63,12 @@ export default function HeroSection() {
                     force3D: true,
                 }, 0)
                 .to(imageWrapperRef.current, {
-                    width: imageWidth,
-                    height: '60%',
-                    top: '40%',
-                    left: imageLeft,
+                    scale: isMobile ? 0.8 : 0.8,
+                    scaleY: isMobile ? 0.6 : 0.48,
+                    y: '20vh',
                     ease: 'none',
                     force3D: true,
-                }, 0)
-                .to(backgroundTextRef.current, {
-                    autoAlpha: 1,
-                    duration: 0.01,
-                    top: '40%',
-                    force3D: true,
-                }, 0.15)
-                .to(backgroundTextRef.current, {
-                    autoAlpha: 0,
-                    duration: 0.01,
-                    top: '40%',
-                    force3D: true,
-                }, 0.85);
+                }, 0);
 
             gsap.to([bottomGradientRef.current, scrollIndicatorRef.current], {
                 opacity: 0,
@@ -117,7 +112,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section ref={heroRef} className="relative h-[200vh] w-full overflow-hidden bg-[#FFFDD0]">
+        <section ref={heroRef} className="relative h-[150vh] w-full overflow-hidden bg-[#FFFDD0]">
             <div
                 ref={backgroundTextRef}
                 className="absolute inset-0 h-screen flex items-center justify-center pointer-events-none overflow-hidden z-0"
@@ -156,7 +151,12 @@ export default function HeroSection() {
             <div
                 ref={imageWrapperRef}
                 className="absolute inset-0 w-full h-screen z-10"
-                style={{ willChange: 'transform, width, height', transform: 'translate3d(0,0,0)' }}
+                style={{ 
+                    willChange: 'transform', 
+                    transform: 'translate3d(0,0,0)',
+                    backfaceVisibility: 'hidden',
+                    perspective: '1000px'
+                }}
             >
                 <div className="relative w-full h-full">
                     <Image
