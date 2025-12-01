@@ -24,29 +24,17 @@ const Section2 = () => {
                     </svg>
                 </div>
             </div>
-            <div className="w-full overflow-hidden mt-4">
+            <div className="w-full overflow-hidden mt-16">
                 <div className="flex animate-scroll-left">
-                    <div className="flex shrink-0">
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/img.png" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/img.png" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/img.png" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/img.png" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                    </div>
-                    <div className="flex shrink-0">
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
-                        <Image src="/Tacos Icon.svg" className='w-[350px] h-[350px]' alt="Section 1" width={1000} height={1000} />
+                    <div className="flex shrink-0 gap-4">
+                        <Image src="/girl.webp" className='w-[350px] h-[450px] rounded-tr-4xl' alt="Section 1" width={1000} height={1000} />
+                        <Image src="/girl2.webp" className='w-[350px] h-[450px] rounded-tl-4xl' alt="Section 1" width={1000} height={1000} />
+                        <Image src="/girl.webp" className='w-[350px] h-[450px] rounded-tr-4xl' alt="Section 1" width={1000} height={1000} />
+                        <Image src="/girl2.webp" className='w-[350px] h-[450px] rounded-tl-4xl' alt="Section 1" width={1000} height={1000} />
+                        <Image src="/girl.webp" className='w-[350px] h-[450px] rounded-tr-4xl' alt="Section 1" width={1000} height={1000} />
+                        <Image src="/girl2.webp" className='w-[350px] h-[450px] rounded-tl-4xl  ' alt="Section 1" width={1000} height={1000} />
+                        <Image src="/girl.webp" className='w-[350px] h-[450px] rounded-tr-4xl' alt="Section 1" width={1000} height={1000} />
+                        <Image src="/girl2.webp" className='w-[350px] h-[450px] rounded-tl-4xl' alt="Section 1" width={1000} height={1000} />
                     </div>
                 </div>
             </div>

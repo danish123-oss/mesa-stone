@@ -16,7 +16,7 @@ export default function HeroSection() {
     const backgroundTextRef = useRef<HTMLDivElement>(null);
     const bottomGradientRef = useRef<HTMLDivElement>(null);
     const scrollIndicatorRef = useRef<HTMLDivElement>(null);
-
+    const imageRef = useRef<HTMLImageElement>(null);
     useEffect(() => {
         const ctx = gsap.context(() => {
             const isMobile = window.innerWidth < 768;
@@ -24,7 +24,7 @@ export default function HeroSection() {
             const imageLeft = isMobile ? '10%' : '25%';
 
             const scrollDistance = window.innerHeight * 0.6;
-            
+
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: heroRef.current,
@@ -39,7 +39,7 @@ export default function HeroSection() {
             });
 
             gsap.set(backgroundTextRef.current, { autoAlpha: 1 });
-            
+
             gsap.set(imageWrapperRef.current, {
                 transformOrigin: 'center center',
             });
@@ -65,11 +65,10 @@ export default function HeroSection() {
                 .to(imageWrapperRef.current, {
                     scale: isMobile ? 0.8 : 0.8,
                     scaleY: isMobile ? 0.6 : 0.48,
-                    y: '20vh',
+                    // y: '20vh',
                     ease: 'none',
                     force3D: true,
                 }, 0);
-
             gsap.to([bottomGradientRef.current, scrollIndicatorRef.current], {
                 opacity: 0,
                 scrollTrigger: {
@@ -112,7 +111,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section ref={heroRef} className="relative h-[150vh] w-full overflow-hidden bg-[#FFFDD0]">
+        <section ref={heroRef} className="relative h-screen w-full overflow-hidden bg-[#FFFDD0]">
             <div
                 ref={backgroundTextRef}
                 className="absolute inset-0 h-screen flex items-center justify-center pointer-events-none overflow-hidden z-0"
@@ -151,8 +150,8 @@ export default function HeroSection() {
             <div
                 ref={imageWrapperRef}
                 className="absolute inset-0 w-full h-screen z-10"
-                style={{ 
-                    willChange: 'transform', 
+                style={{
+                    willChange: 'transform',
                     transform: 'translate3d(0,0,0)',
                     backfaceVisibility: 'hidden',
                     perspective: '1000px'
@@ -160,6 +159,7 @@ export default function HeroSection() {
             >
                 <div className="relative w-full h-full">
                     <Image
+                        ref={imageRef}
                         src="/Woman Eating Taco.svg"
                         alt="Hero background"
                         fill
