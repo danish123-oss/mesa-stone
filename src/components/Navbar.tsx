@@ -48,7 +48,7 @@ export default function Navbar() {
                     href="/"
                     className="flex items-center gap-2 text-[#B50E36] font-logo font-bold uppercase tracking-[0.35em] text-lg md:text-2xl"
                 >
-                    <Image src="/Mesa Stone Logo Orig.svg" alt="Mesa Stone logo" width={200} height={200} />
+                    <Image src="/Mesa Stone Logo Orig.svg" className='lg:w-[200px] w-[100px] lg:h-[200px] h-[100px]' alt="Mesa Stone logo" width={200} height={200} />
                 </Link>
 
                 <div className="flex items-center gap-4">
@@ -78,7 +78,7 @@ export default function Navbar() {
                         aria-label="Toggle navigation menu"
                     >
                         <span className="absolute inset-0 bg-[#E0115F] transform origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100" />
-                        <span className="relative z-10 transition-colors duration-500 group-hover:text-[#FFFDD0]">Navigate</span>
+                        <span className="relative z-10  transition-colors duration-500 group-hover:text-[#FFFDD0]">Navigate</span>
                         {isMenuOpen ? <CloseIcon className="w-5 h-5 relative z-10 transition-colors duration-500 group-hover:stroke-[#FFFDD0]" /> : <HamburgerIcon className="w-6 h-6 relative z-10 transition-colors duration-500 group-hover:stroke-[#FFFDD0]" />}
                     </button>
                 </div>

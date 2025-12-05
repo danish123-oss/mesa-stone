@@ -78,7 +78,7 @@ const MapSection = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className=" bg-[#FFFDD0] lg:h-screen h-[500px] flex flex-col items-center justify-center z-10 relative">
+        <section ref={sectionRef} className=" bg-[#FFFDD0] lg:h-screen h-[720px] flex flex-col items-center justify-center z-10 relative">
             <div className="relative z-10 w-full h-full  flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-12 md:py-20">
                 <div className="w-full">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 xl:gap-16 items-center ">

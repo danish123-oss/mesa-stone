@@ -186,6 +186,15 @@ export default function HeroSection() {
                     <h1 className="text-[12vw] sm:text-[10vw] lobster-regular md:text-[8vw] font-heading font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase">
                         Pillow
                     </h1>
+                    <h1 className="text-[12vw] sm:text-[10vw] lobster-regular md:text-[8vw] font-heading font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase">
+                        Of
+                    </h1>
+                    <h1 className="text-[12vw] sm:text-[10vw] lobster-regular md:text-[8vw] font-heading font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase">
+                        Chewy
+                    </h1>
+                    <h1 className="text-[12vw] sm:text-[10vw] lobster-regular md:text-[8vw] font-heading font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase">
+                        Delight
+                    </h1>
                 </div>
 
                 <div className='flex items-center flex-col justify-center lg:mt-[400px]'>

@@ -26,7 +26,7 @@ const Section1 = () => {
                     <Image src="/cloud2.webp" alt="cloud" width={350} height={180} className="mx-14" />
                 </div>
             </div>
-            <h2 className="text-[100px] md:max-w-7xl text-center font-medium! mt-[60px] tracking-[3.5px] leading-[1.2]  text-[#FFFDD0]  lobster-regular z-10">
+            <h2 className="lg:text-[100px] text-[40px] md:max-w-7xl text-center font-medium! mt-[60px] tracking-[3.5px] leading-[1.2]  text-[#FFFDD0]  lobster-regular z-10">
                 This is Mesa Stone, <br /> We’ve reimagined the frybread taco. Handmade with care. <br />
             </h2>
             <div className="flex justify-center z-9 md:-mt-[200px] relative w-full">
@@ -43,11 +43,11 @@ const Section1 = () => {
                     <Image src="/Woman Dancing.svg" className='md:w-[300px] w-[200px] md:-mt-[140px]' alt="Section 1" width={1000} height={1000} />
                 </div>
                 <div className="col-span-3">
-                    <h1 className='text-center text-[#ffffff] text-[45px] tracking-[2px] font-bold!'>Those who’ve tasted it already know. <br /> For everyone else — get ready for a hit that’s more than flavour.</h1>
-                    <p className='text-center text-[#ffffff] mt-7 text-[17px] tracking-[2px] font-normal!'>Mesa Stone isn’t just about food. That would be too easy. We want you to feel something in every bite — a spark, a story, a connection. It’s not simple to pull off, but that’s exactly why we do it.</p>
+                    <h1 className='text-center text-[#ffffff] lg:text-[45px] text-[20px] tracking-[2px] font-bold!'>Those who’ve tasted it already know. <br /> For everyone else — get ready for a hit that’s more than flavour.</h1>
+                    <p className='text-center text-[#ffffff] mt-7 lg:text-[17px] text-[13px] tracking-[2px] font-normal!'>Mesa Stone isn’t just about food. That would be too easy. We want you to feel something in every bite — a spark, a story, a connection. It’s not simple to pull off, but that’s exactly why we do it.</p>
 
-                    <p className='text-center text-[#ffffff] mt-7 text-[17px] tracking-[2px] font-normal!'>How? By refusing shortcuts. Not in flavour, not in sourcing, not in the way we create. Every ingredient, every detail, is chosen with intent. From the farms we partner with to the techniques we honour, Mesa Stone is built on discipline and craft. What you taste isn’t just a dish — it’s culture, rebellion, and memory, all served warm.</p>
-                    <div className="group cursor-pointer relative w-40 h-40 sm:w-48 sm:h-48 md:w-[250px] md:h-[150px] flex items-center justify-center drop-shadow-[0_8px_16px_rgba(0,0,0,0.4)]">
+                    <p className='text-center text-[#ffffff] mt-7 lg:text-[17px] text-[13px] tracking-[2px] font-normal!'>How? By refusing shortcuts. Not in flavour, not in sourcing, not in the way we create. Every ingredient, every detail, is chosen with intent. From the farms we partner with to the techniques we honour, Mesa Stone is built on discipline and craft. What you taste isn’t just a dish — it’s culture, rebellion, and memory, all served warm.</p>
+                    <div className="group cursor-pointer -ml-[90px] lg:ml-0 relative w-40 h-40 sm:w-48 sm:h-48 md:w-[250px] md:h-[150px] flex items-center justify-center drop-shadow-[0_8px_16px_rgba(0,0,0,0.4)]">
                         <Image
                             src="/Mesa%20Stone%20Logo%20Round%20Shape.svg"
                             alt="Flavor Map"
