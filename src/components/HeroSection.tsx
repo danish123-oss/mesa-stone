@@ -16,14 +16,13 @@ export default function HeroSection() {
     const backgroundTextRef = useRef<HTMLDivElement>(null);
     const bottomGradientRef = useRef<HTMLDivElement>(null);
     const scrollIndicatorRef = useRef<HTMLDivElement>(null);
-    const imageRef = useRef<HTMLImageElement>(null);
     useEffect(() => {
         const ctx = gsap.context(() => {
             const isMobile = window.innerWidth < 768;
             const imageWidth = isMobile ? '80%' : '50%';
             const imageLeft = isMobile ? '10%' : '25%';
 
-            const scrollDistance = window.innerHeight * 0.6;
+            const scrollDistance = window.innerHeight * 0.9;
 
             const tl = gsap.timeline({
                 scrollTrigger: {
@@ -111,7 +110,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section ref={heroRef} className="relative h-screen w-full overflow-hidden bg-[#FFFDD0]">
+        <section ref={heroRef} className="relative h-[150vh] w-full overflow-hidden bg-[#FFFDD0]">
             <div
                 ref={backgroundTextRef}
                 className="absolute inset-0 h-screen flex items-center justify-center pointer-events-none overflow-hidden z-0"
@@ -159,15 +158,14 @@ export default function HeroSection() {
             >
                 <div className="relative w-full h-full">
                     <Image
-                        ref={imageRef}
                         src="/Woman Eating Taco.svg"
                         alt="Hero background"
                         fill
                         priority
-                        className="object-cover"
+                        className="object-contain"
                         style={{ objectPosition: 'center' }}
                     />
-                    <div className="absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-[#FFFDD0]/60" />
+                    <div className="absolute inset-0 from-black/20 via-transparent to-[#FFFDD0]/60" />
                 </div>
             </div>
 
@@ -177,24 +175,14 @@ export default function HeroSection() {
                 style={{ willChange: 'transform, opacity', transform: 'translate3d(0,0,0)' }}
             >
                 <div className="relative max-w-4xl text-center">
-                    <h1 className="text-[12vw] sm:text-[10vw] lobster-regular md:text-[8vw] font-heading font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase">
-                        A
-                    </h1>
-                    <h1 className="text-[12vw] sm:text-[10vw] lobster-regular md:text-[8vw] font-heading font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase">
-                        Crispy
-                    </h1>
-                    <h1 className="text-[12vw] sm:text-[10vw] lobster-regular md:text-[8vw] font-heading font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase">
-                        Pillow
-                    </h1>
-                    <h1 className="text-[12vw] sm:text-[10vw] lobster-regular md:text-[8vw] font-heading font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase">
-                        Of
-                    </h1>
-                    <h1 className="text-[12vw] sm:text-[10vw] lobster-regular md:text-[8vw] font-heading font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase">
-                        Chewy
-                    </h1>
-                    <h1 className="text-[12vw] sm:text-[10vw] lobster-regular md:text-[8vw] font-heading font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase">
-                        Delight
-                    </h1>
+                             {['A', 'Crispy', 'Pillow', 'Of', 'Chewy', 'Delight'].map((word, index) => (
+                        <h1 
+                            key={index}
+                            className="text-[7vw] sm:text-[10vw] md:text-[8vw] font-modern-love-caps font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase"
+                        >
+                            {word}
+                        </h1>
+                    ))}
                 </div>
 
                 <div className='flex items-center flex-col justify-center lg:mt-[400px]'>
