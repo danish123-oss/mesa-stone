@@ -19,25 +19,23 @@ export default function HeroSection() {
     useEffect(() => {
         const ctx = gsap.context(() => {
             const isMobile = window.innerWidth < 768;
-            const imageWidth = isMobile ? '80%' : '50%';
-            const imageLeft = isMobile ? '10%' : '25%';
-
-            const scrollDistance = window.innerHeight * 0.9;
+            const scrollDistance = window.innerHeight * 0.8;
 
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: heroRef.current,
                     start: 'top top',
                     end: `+=${scrollDistance}px`,
-                    scrub: 1,
+                    scrub: 0.5,
                     markers: false,
                     anticipatePin: 1,
                     pin: true,
                     pinSpacing: true,
+                    invalidateOnRefresh: true,
                 }
             });
 
-            gsap.set(backgroundTextRef.current, { autoAlpha: 1 });
+            gsap.set(backgroundTextRef.current, { opacity: 0 });
 
             gsap.set(imageWrapperRef.current, {
                 transformOrigin: 'center center',
@@ -64,10 +62,15 @@ export default function HeroSection() {
                 .to(imageWrapperRef.current, {
                     scale: isMobile ? 0.8 : 0.8,
                     scaleY: isMobile ? 0.6 : 0.48,
-                    // y: '20vh',
+                    ease: 'none',
+                    force3D: true,
+                }, 0)
+                .to(backgroundTextRef.current, {
+                    opacity: 1,
                     ease: 'none',
                     force3D: true,
                 }, 0);
+
             gsap.to([bottomGradientRef.current, scrollIndicatorRef.current], {
                 opacity: 0,
                 scrollTrigger: {
@@ -110,7 +113,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section ref={heroRef} className="relative h-[150vh] w-full overflow-hidden bg-[#FFFDD0]">
+        <section ref={heroRef} className="relative h-[100vh] w-full overflow-hidden bg-[#FFFDD0]">
             <div
                 ref={backgroundTextRef}
                 className="absolute inset-0 h-screen flex items-center justify-center pointer-events-none overflow-hidden z-0"
@@ -171,12 +174,12 @@ export default function HeroSection() {
 
             <div
                 ref={overlayTextRef}
-                className="absolute inset-0 h-screen flex max-[1000px]:mt-[100px] flex-col md:flex-row md:gap-[100px] gap-10 items-center justify-center md:justify-start px-8 md:px-16 lg:px-24 pointer-events-none z-20"
+                className="absolute inset-0 h-screen flex max-[1000px]:mt-[30px] flex-col md:flex-row md:gap-[100px] gap-10 items-center justify-center md:justify-start px-8 md:px-16 lg:px-24 pointer-events-none z-20"
                 style={{ willChange: 'transform, opacity', transform: 'translate3d(0,0,0)' }}
             >
                 <div className="relative max-w-4xl text-center">
-                             {['A', 'Crispy', 'Pillow', 'Of', 'Chewy', 'Delight'].map((word, index) => (
-                        <h1 
+                    {['A', 'Crispy', 'Pillow', 'Of', 'Chewy', 'Delight'].map((word, index) => (
+                        <h1
                             key={index}
                             className="text-[7vw] sm:text-[10vw] md:text-[8vw] font-modern-love-caps font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase"
                         >
@@ -201,7 +204,7 @@ export default function HeroSection() {
                         />
                         <div className="absolute inset-0 flex items-center justify-center text-center gap-2 z-10">
                             <svg
-                                className="w-5 h-5 sm:w-6 sm:h-6 md:w-[120px] md:h-[120px] text-[#E0115F] transition-transform duration-300 group-hover:translate-x-1"
+                                className="w-10 h-10 sm:w-6 sm:h-6 md:w-[120px] md:h-[120px] text-[#E0115F] lg:text-[#FFFDD0] transition-transform duration-300 group-hover:translate-x-1"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 strokeWidth={2}

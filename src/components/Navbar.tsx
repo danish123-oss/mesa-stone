@@ -43,7 +43,7 @@ export default function Navbar() {
             className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? '' : 'bg-transparent'
                 }`}
         >
-            <div className="w-full mx-auto px-6 py-4 flex items-center justify-between">
+            <div className="w-full mx-auto px-6 flex items-center justify-between">
                 <Link
                     href="/"
                     className="flex items-center gap-2 text-[#B50E36] font-logo font-bold uppercase tracking-[0.35em] text-lg md:text-2xl"

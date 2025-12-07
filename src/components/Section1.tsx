@@ -7,22 +7,26 @@ const Section1 = () => {
             <div className="absolute inset-0 overflow-hidden pointer-events-none z-11!">
                 <div className="absolute top-[10%] left-full w-[200%] flex animate-scroll-left ">
                     <Image src="/cloud.webp" alt="cloud" width={350} height={180} className="mx-8" />
+                    <Image src="/cloud.webp" alt="cloud" width={350} height={180} className="mx-8" />
                 </div>
                 <div className="absolute top-[20%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '10s' }}>
+                    <Image src="/cloud2.webp" alt="cloud" width={350} height={180} className="mx-12" />
                     <Image src="/cloud2.webp" alt="cloud" width={350} height={180} className="mx-12" />
                 </div>
                 <div className="absolute top-[40%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '25s' }}>
                     <Image src="/cloud.webp" alt="cloud" width={350} height={180} className="mx-10" />
-
+                    <Image src="/cloud.webp" alt="cloud" width={350} height={180} className="mx-10" />
                 </div>
                 <div className="absolute top-[60%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '10s' }}>
                     <Image src="/cloud2.webp" alt="cloud" width={350} height={180} className="mx-10" />
-
+                    <Image src="/cloud2.webp" alt="cloud" width={350} height={180} className="mx-10" />
                 </div>
                 <div className="absolute top-[80%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '20s' }}>
                     <Image src="/cloud.webp" alt="cloud" width={350} height={180} className="mx-14" />
+                    <Image src="/cloud.webp" alt="cloud" width={350} height={180} className="mx-14" />
                 </div>
                 <div className="absolute top-[90%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '10s' }}>
+                    <Image src="/cloud2.webp" alt="cloud" width={350} height={180} className="mx-14" />
                     <Image src="/cloud2.webp" alt="cloud" width={350} height={180} className="mx-14" />
                 </div>
             </div>
