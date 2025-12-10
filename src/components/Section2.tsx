@@ -41,22 +41,22 @@ const Section2 = () => {
             <div className='w-full mt-[100px] mb-16  flex items-center justify-center relative'>
                 <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
                     <div className="absolute top-[10%] left-full w-[200%] flex animate-scroll-left ">
-                        <Image src="/taco.png" alt="cloud" width={200} height={180} className="mx-8" />
+                        <Image src="/movingtaco.png" alt="cloud" width={200} height={180} className="mx-8" />
                     </div>
                     <div className="absolute top-[20%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '10s' }}>
-                        <Image src="/taco.png" alt="cloud" width={200} height={180} className="mx-12" />
+                        <Image src="/movingtaco.png" alt="cloud" width={200} height={180} className="mx-12" />
                     </div>
                     <div className="absolute top-[40%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '25s' }}>
-                        <Image src="/taco.png" alt="cloud" width={200} height={180} className="mx-10" />
+                        <Image src="/movingtaco.png" alt="cloud" width={200} height={180} className="mx-10" />
                     </div>
                     <div className="absolute top-[60%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '10s' }}>
-                        <Image src="/taco.png" alt="cloud" width={200} height={180} className="mx-10" />
+                        <Image src="/movingtaco.png" alt="cloud" width={200} height={180} className="mx-10" />
                     </div>
                     <div className="absolute top-[80%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '20s' }}>
-                        <Image src="/taco.png" alt="cloud" width={200} height={180} className="mx-14" />
+                        <Image src="/movingtaco.png" alt="cloud" width={200} height={180} className="mx-14" />
                     </div>
                     <div className="absolute top-[70%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '10s' }}>
-                        <Image src="/taco.png" alt="cloud" width={200} height={180} className="mx-14" />
+                        <Image src="/movingtaco.png" alt="cloud" width={200} height={180} className="mx-14" />
                     </div>
                 </div>
                 <div className="relative flex flex-col items-center mt-16 mb-16">
