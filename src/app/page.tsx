@@ -8,6 +8,7 @@ import Section2 from "@/components/Section2";
 import FooterSection from "@/components/FooterSection";
 import Section3 from '@/components/Section3';
 import MapSection from '@/components/MapSection';
+import LastSection from '@/components/LastSection';
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -22,6 +23,7 @@ export default function Home() {
         <Section2 />
         <Section3 />
         <MapSection />
+        <LastSection />
         <FooterSection />
       </main>
 
