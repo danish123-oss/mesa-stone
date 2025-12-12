@@ -113,7 +113,7 @@ export default function LastSection() {
     }, []);
 
     return (
-        <section ref={heroRef} className="relative h-[100vh] w-full overflow-hidden bg-[#FFFDD0]">
+        <section ref={heroRef} className="relative h-[100vh] w-full overflow-hidden bg-[#FFFDD0] z-11">
             <div
                 ref={backgroundTextRef}
                 className="absolute inset-0 h-screen flex items-center justify-center pointer-events-none overflow-hidden z-0"

@@ -101,8 +101,8 @@ const Section3 = () => {
                             </h2>
                         </div>
 
-                        <div ref={rightContentRef} className="flex flex-col absolute max-w-lg mx-auto lg:bottom-0 bottom-10 right-0 justify-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 mt-8 md:mt-0" style={{ opacity: 1 }}>
-                            <p className="text-[#E0115F] text-[13px] sm:text-[15px] md:text-[17px] lg:text-[19px] xl:text-[21px] leading-relaxed tracking-[0.5px] sm:tracking-[1px] md:tracking-[1.5px] lg:tracking-[2px] font-normal drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
+                        <div ref={rightContentRef} className="flex flex-col absolute max-w-lg mx-auto lg:bottom-0 bottom-10 lg:right-0  justify-center space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5 mt-8 md:mt-0" style={{ opacity: 1 }}>
+                            <p className="text-[#E0115F] text-[20px] sm:text-[15px] md:text-[17px] lg:text-[19px] xl:text-[21px] leading-relaxed tracking-[0.5px] sm:tracking-[1px] md:tracking-[1.5px] lg:tracking-[2px] font-normal drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]">
                                 We bring people together through food, fun, music & community.
                             </p>
 

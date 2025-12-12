@@ -7,8 +7,9 @@ import Section1 from "@/components/Section1";
 import Section2 from "@/components/Section2";
 import FooterSection from "@/components/FooterSection";
 import Section3 from '@/components/Section3';
-import MapSection from '@/components/MapSection';
+// import MapSection from '@/components/MapSection';
 import LastSection from '@/components/LastSection';
+import SrollAnimationalSection from '@/components/SrollAnimationalSection';
 
 export default function Home() {
   const [showSplash, setShowSplash] = useState(true);
@@ -22,7 +23,8 @@ export default function Home() {
         <Section1 />
         <Section2 />
         <Section3 />
-        <MapSection />
+        <SrollAnimationalSection />
+        {/* <MapSection /> */}
         <LastSection />
         <FooterSection />
       </main>
