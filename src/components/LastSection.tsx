@@ -14,7 +14,7 @@ export default function LastSection() {
     const contentTextRef = useRef<HTMLDivElement>(null);
     const ctaButtonRef = useRef<HTMLDivElement>(null);
     const backgroundTextRef = useRef<HTMLDivElement>(null);
-    const bottomGradientRef = useRef<HTMLDivElement>(null);
+    // const bottomGradientRef = useRef<HTMLDivElement>(null);
     const scrollIndicatorRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
         const ctx = gsap.context(() => {
@@ -71,15 +71,15 @@ export default function LastSection() {
                     force3D: true,
                 }, 0);
 
-            gsap.to([bottomGradientRef.current, scrollIndicatorRef.current], {
-                opacity: 0,
-                scrollTrigger: {
-                    trigger: heroRef.current,
-                    start: 'bottom bottom',
-                    end: 'bottom top',
-                    scrub: 0.5,
-                }
-            });
+            // gsap.to([bottomGradientRef.current, scrollIndicatorRef.current], {
+            //     opacity: 0,
+            //     scrollTrigger: {
+            //         trigger: heroRef.current,
+            //         start: 'bottom bottom',
+            //         end: 'bottom top',
+            //         scrub: 0.5,
+            //     }
+            // });
 
             gsap.from(overlayTextRef.current?.children || [], {
                 opacity: 0,
