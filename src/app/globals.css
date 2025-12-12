@@ -8,7 +8,7 @@
   --accent-green: #32CD32;
   --accent-purple: #8B00FF;
   --outline-gray: #2F4F4F;
-  --background: #FFC30B;
+  --background: #FFFDD0;
   --foreground: #171717;
   /* Font Variables - Organized by Usage */
   --font-main-heading: var(--font-modern-love-caps), 'Impact', 'Arial Black', sans-serif;
@@ -26,13 +26,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-dreaming-outloud), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 
 /* ============================================

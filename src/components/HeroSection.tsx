@@ -120,7 +120,7 @@ export default function HeroSection() {
                 style={{ willChange: 'transform, opacity', transform: 'translate3d(0,0,0)' }}
             >
                 <div className="relative w-full rotate-[-8deg] h-full flex flex-col items-center justify-center gap-20 md:gap-28" style={{ willChange: 'transform' }}>
-                    <div className="flex gap-8 whitespace-nowrap animate-scroll-left" style={{ transform: 'rotate(-3deg)' }}>
+                    <div className="flex  gap-8 whitespace-nowrap animate-scroll-left" style={{ transform: 'rotate(-3deg)' }}>
                         <h2 className="text-[10vw] sm:text-[8vw] md:text-[7vw] lg:text-[6vw] font-bold leading-none tracking-wider text-[#E0115F] ">
                             Discover Your Taste •  Try Every Options
                         </h2>
@@ -165,10 +165,10 @@ export default function HeroSection() {
                         alt="Hero background"
                         fill
                         priority
-                        className="object-contain"
+                        className="object-cover"
                         style={{ objectPosition: 'center' }}
                     />
-                    <div className="absolute inset-0 from-black/20 via-transparent to-[#FFFDD0]/60" />
+                    {/* <div className="absolute inset-0 from-black/20 via-transparent to-[#FFFDD0]/60" /> */}
                 </div>
             </div>
 
@@ -181,7 +181,7 @@ export default function HeroSection() {
                     {['A', 'Crispy', 'Pillow', 'Of', 'Chewy', 'Delight'].map((word, index) => (
                         <h1
                             key={index}
-                            className="text-[7vw] sm:text-[10vw] md:text-[8vw] font-modern-love-caps font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase"
+                            className="text-[12vw] sm:text-[10vw] md:text-[8vw] lobster-regular font-bold leading-[0.9] tracking-tight text-[#E0115F] mix-blend-overlay uppercase"
                         >
                             {word}
                         </h1>

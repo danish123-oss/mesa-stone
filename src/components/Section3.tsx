@@ -77,7 +77,7 @@ const Section3 = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className="h-screen bg-[#FFC30B] flex flex-col items-center justify-center z-10 relative lg:mb-[100px]!">
+        <section ref={sectionRef} className="h-screen bg-[#FFFDD0] flex flex-col items-center justify-center z-10 relative lg:mb-[100px]!">
             <div className="absolute inset-0 w-full h-full">
                 <div ref={imageRef} className="relative w-full h-full flex items-center justify-center">
                     <Image
