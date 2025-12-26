@@ -13,7 +13,7 @@ export default function Navbar() {
         { label: 'Home Screen', href: '/' },
         { label: 'Taste The Vibe (Menu)', href: '/menu' },
         { label: 'Order Online', href: '/order' },
-        { label: 'Our Journey', href: '/#journey' },
+        { label: 'Our Journey', href: '/about-us' },
         { label: 'Our Appreciation', href: '/#appreciation' },
         { label: 'Privacy Policy', href: '/privacy' },
         { label: 'Terms & Conditions', href: '/terms' },
