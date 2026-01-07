@@ -48,7 +48,7 @@ export default function Navbar() {
                     href="/"
                     className="flex items-center gap-2 text-[#B50E36] font-logo font-bold uppercase tracking-[0.35em] text-lg md:text-2xl"
                 >
-                    <Image src="/Mesa Stone Logo Orig.svg" className='lg:w-[200px] w-[100px] lg:h-[200px] h-[100px]' alt="Mesa Stone logo" width={200} height={200} />
+                    <Image src="/Mesa Stone Logo Orig.svg" className='lg:w-[200px] w-[100px] lg:h-[120px] h-[100px]' alt="Mesa Stone logo" width={200} height={200} />
                 </Link>
 
                 <div className="flex items-center gap-4">

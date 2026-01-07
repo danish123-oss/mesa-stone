@@ -39,7 +39,7 @@ const Section2 = () => {
                 </div>
             </div>
             <div className='w-full mt-[100px] mb-16  flex items-center justify-center relative'>
-                <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
+                {/* <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
                     <div className="absolute top-[10%] left-full w-[200%] flex animate-scroll-left ">
                         <Image src="/movingtaco.png" alt="cloud" width={200} height={180} className="mx-8" />
                     </div>
@@ -58,7 +58,7 @@ const Section2 = () => {
                     <div className="absolute top-[70%] left-full w-[200%] flex animate-scroll-left" style={{ animationDuration: '10s' }}>
                         <Image src="/movingtaco.png" alt="cloud" width={200} height={180} className="mx-14" />
                     </div>
-                </div>
+                </div> */}
                 <div className="relative flex flex-col items-center mt-16 mb-16">
                     {/* SVG Arc Text */}
                     <svg

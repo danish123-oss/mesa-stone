@@ -7,7 +7,6 @@ import Section1 from "@/components/Section1";
 import Section2 from "@/components/Section2";
 import FooterSection from "@/components/FooterSection";
 import Section3 from '@/components/Section3';
-// import MapSection from '@/components/MapSection';
 import LastSection from '@/components/LastSection';
 import SrollAnimationalSection from '@/components/SrollAnimationalSection';
 
@@ -18,18 +17,23 @@ export default function Home() {
     <>
       {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
 
-      <main className="relative">
-        <HeroSection />
-        <Section1 />
-        <Section2 />
-        <Section3 />
-        <SrollAnimationalSection />
-        {/* <MapSection /> */}
-        <LastSection />
-        <FooterSection />
-      </main>
+      <div className="relative">
+        <div className="fixed inset-0 z-0 overflow-auto">
+          <FooterSection />
+        </div>
 
-
+        <div className="relative z-10">
+          <main className="relative">
+            <HeroSection />
+            <Section1 />
+            <Section2 />
+            <Section3 />
+            <SrollAnimationalSection />
+            <LastSection />
+            <div className="h-screen" />
+          </main>
+        </div>
+      </div>
     </>
   );
 }

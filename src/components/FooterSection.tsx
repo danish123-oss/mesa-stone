@@ -22,7 +22,7 @@ const FooterSection = () => {
     }
 
     return (
-        <section className="min-h-screen bg-[#E0115F] flex flex-col items-center justify-center px-4 py-16">
+        <section className="min-h-[120vh] bg-[#E0115F] flex flex-col items-center justify-center px-4 py-16">
             <div className="w-full max-w-6xl">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-12 lobster-regular">
                     Reach out — We’re listening
@@ -81,7 +81,7 @@ const FooterSection = () => {
                             value={formData.message}
                             onChange={handleChange}
                             required
-                            rows={2}
+                            rows={1}
                             className="w-full border-0 border-b-2 border-white bg-transparent text-white text-lg py-3 focus:outline-none focus:border-white/60 transition-colors resize-none placeholder-white/50"
                         />
                     </div>
@@ -95,7 +95,7 @@ const FooterSection = () => {
                         </button>
                     </div>
                 </form>
-                <div className='bg-[#00688D] mt-16 px-12 py-8 w-fit rounded-lg flex flex-col items-center justify-center mx-auto'>
+                <div className='bg-[#00688D] mt-6 px-12 py-8 w-fit rounded-lg flex flex-col items-center justify-center mx-auto'>
 
                     <h1 className='text-white  text-3xl font-medium! text-center lobster-regular'>Become our Companion</h1>
                     <div className=" mt-8 flex justify-center items-center gap-8 md:gap-12">

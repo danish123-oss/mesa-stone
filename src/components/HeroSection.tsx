@@ -177,7 +177,7 @@ export default function HeroSection() {
                 className="absolute inset-0 h-screen flex max-[1000px]:mt-[30px] flex-col md:flex-row md:gap-[100px] gap-10 items-center justify-center md:justify-start px-8 md:px-16 lg:px-24 pointer-events-none z-20"
                 style={{ willChange: 'transform, opacity', transform: 'translate3d(0,0,0)' }}
             >
-                <div className="relative max-w-4xl text-center">
+                <div className="relative max-w-4xl text-center lg:mt-[100px]">
                     {['A', 'Crispy', 'Pillow', 'Of', 'Chewy', 'Delight'].map((word, index) => (
                         <h1
                             key={index}
