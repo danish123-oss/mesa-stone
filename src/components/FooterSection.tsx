@@ -22,8 +22,8 @@ const FooterSection = () => {
     }
 
     return (
-        <section className="min-h-[120vh] bg-[#E0115F] flex flex-col items-center justify-center px-4 py-16">
-            <div className="w-full max-w-6xl">
+        <section className="min-h-screen bg-[#E0115F] flex flex-col items-center justify-start px-4 py-16">
+            <div className="w-full max-w-6xl my-auto">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-12 lobster-regular">
                     Reach out — We’re listening
                 </h2>

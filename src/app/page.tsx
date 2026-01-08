@@ -18,20 +18,20 @@ export default function Home() {
       {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
 
       <div className="relative">
-        <div className="fixed inset-0 z-0 overflow-auto">
+        <div className="fixed w-full z-0 overflow-auto">
           <FooterSection />
         </div>
 
-        <div className="relative z-10">
-          <main className="relative">
+        <div className="relative pointer-events-none">
+          <main className="relative z-10 pointer-events-auto">
             <HeroSection />
             <Section1 />
             <Section2 />
             <Section3 />
             <SrollAnimationalSection />
             <LastSection />
-            <div className="h-screen" />
           </main>
+          <div className="h-screen" />
         </div>
       </div>
     </>
